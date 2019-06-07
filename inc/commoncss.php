@@ -94,6 +94,7 @@ function bakery_common_custom_css() {
 			.global-banner {
 				background-color: {$themecolor};
 			}
+			
 
 			b, 
 			sup, 
@@ -180,7 +181,8 @@ function bakery_common_custom_css() {
 			.content--area .page-links a span, 
 			.content--area .page-links span:not(:first-child),
 			.widget-wrap .post-category-widget .cat-list li:hover,
-			.single-sidebar-widget ul li:hover {
+			.single-sidebar-widget ul li:hover,
+			.banner-content h1 {
 				border-color: {$themecolor};
 			}
 			.global-banner {

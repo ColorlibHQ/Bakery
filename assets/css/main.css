@@ -225,7 +225,16 @@ div.wpcf7 .ajax-loader{
 .meta .sl-wrapper a{
     margin-right: 4px;
 }
-
+.inner-child-fof .search-form input {
+  padding: 5px 10px;
+  width: 70%;
+  border: 1px solid #ddd;
+}
+.inner-child-fof .search-form button{
+  padding: 5px 15px;
+  margin-left: -3px;
+  border: 1px solid #ddd
+}
 
 /**
  * 404 Page

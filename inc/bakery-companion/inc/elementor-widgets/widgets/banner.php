@@ -206,7 +206,7 @@ class Bakery_Banner extends Widget_Base {
             'color_btnbg', [
                 'label'       => __( 'Button Background Color', 'bakery' ),
                 'type'        => Controls_Manager::COLOR,
-                'default'     => '#d1ab7f',
+                'default'     => '',
                 'selectors'   => [
                     '{{WRAPPER}} .banner-content .primary-btn.squire' => 'background-color: {{VALUE}};',
                 ],

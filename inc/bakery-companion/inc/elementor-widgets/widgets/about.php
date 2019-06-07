@@ -299,7 +299,7 @@ class Bakery_About extends Widget_Base {
 			'color_btnbg', [
 				'label'       => __( 'Button Background Color', 'bakery' ),
 				'type'        => Controls_Manager::COLOR,
-				'default'     => '#d1ab7f',
+				'default'     => '',
 				'selectors'   => [
 					'{{WRAPPER}} .home-about-area .primary-btn.squire' => 'background-color: {{VALUE}};',
 					'{{WRAPPER}} .about-video-left .primary-btn.squire' => 'background-color: {{VALUE}};',

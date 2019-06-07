@@ -241,10 +241,6 @@ class Epsilon_Dashboard_Setup {
 				'integration' => true,
 				'recommended' => false,
 			),
-			'bakery' => array(
-				'integration' => true,
-				'recommended' => false,
-			),
 			'elementor' => array(
 				'integration' => true,
 				'recommended' => false,
@@ -266,7 +262,6 @@ class Epsilon_Dashboard_Setup {
 
 		if ( ! $integrated ) {
 			unset( $arr['contact-form-7'] );
-			unset( $arr['bakery'] );
 			unset( $arr['elementor'] );
 			unset( $arr['one-click-demo-import'] );
 		}
@@ -296,21 +291,6 @@ class Epsilon_Dashboard_Setup {
 						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'installed', 'Contact Form 7', 'verify_cf7' ) ? __( 'Activate Plugin', 'bakery' ) : __( 'Install Plugin', 'bakery' ),
 						'type'    => 'handle-plugin',
 						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'installed', 'Contact Form 7', 'verify_cf7' ),
-					),
-				),
-			),
-			array(
-				'id'          => 'bakery-check-ac',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'bakery', 'title', 'Bakery Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'bakery', 'description', 'Bakery Companion' ),
-				'plugin_slug' => 'bakery',
-				'state'       => false,
-				'check'       => defined( 'BAKERY_COMPANION_VERSION' ),
-				'actions'     => array(
-					array(
-						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'bakery', 'installed', 'Bakery Companion' ) ? __( 'Activate Plugin', 'bakery' ) : __( 'Install Plugin', 'bakery' ),
-						'type'    => 'handle-plugin',
-						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'bakery', 'installed', 'Bakery Companion' ),
 					),
 				),
 			),
@@ -368,13 +348,6 @@ class Epsilon_Dashboard_Setup {
 				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'description', 'Contact Form 7', 'verify_cf7' ),
 				'plugin_slug' => 'contact-form-7',
 				'check'       => defined( 'WPCF7_VERSION' ),
-			),
-			array(
-				'id'          => 'bakery-check-ac',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'bakery', 'title', 'Bakery Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'bakery', 'description', 'Bakery Companion' ),
-				'plugin_slug' => 'bakery',
-				'check'       => defined( 'BAKERY_COMPANION_VERSION' ),
 			),
 			array(
 				'id'          => 'bakery-check-elementor',

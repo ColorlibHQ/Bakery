@@ -131,7 +131,7 @@ class Bakery_Blog extends Widget_Base {
             'color_blogtitlehov', [
                 'label'     => __( 'Blog Title Hover Color', 'bakery' ),
                 'type'      => Controls_Manager::COLOR,
-                'default'   => '#d1ab7f',
+                'default'   => '',
                 'selectors' => [
                     '{{WRAPPER}} .single-blog:hover h4' => 'color: {{VALUE}};',
                 ],

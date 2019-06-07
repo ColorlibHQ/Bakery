@@ -29,16 +29,9 @@ if( ! defined( 'ABSPATH' ) ) {
 
 						$wrongText = bakery_opt( 'bakery_fof_text_two', $wrongText );
 					
-						$anchor = bakery_anchor_tag(
-							array(
-								'url' 	 => esc_url( site_url( '/' ) ),
-								'text' 	 => esc_html__( 'Back To Home page', 'bakery' ),
-							)
-						);
-
 						echo bakery_paragraph_tag(
 							array(
-								'text' 	 => sprintf( '%s %s', esc_html( $wrongText ), wp_kses_post( $anchor )  ),
+								'text' 	 => sprintf( '%s', esc_html( $wrongText ) ),
 							)
 						);
 
@@ -50,7 +43,17 @@ if( ! defined( 'ABSPATH' ) ) {
 									get_search_form();
 								?>
 							</div>
+							
 						</div>
+						<?php
+							echo bakery_anchor_tag(
+								array(
+									'url' 	 => esc_url( site_url( '/' ) ),
+									'text' 	 => esc_html__( 'Back To Home page', 'bakery' ),
+									'class'	 => 'primary-btn mt-20'
+								)
+							);
+							?>
 					</div>
 				</div>
 			</div>

@@ -26,21 +26,22 @@ if( ! defined( 'ABSPATH' ) ) {
 		 * @Hook  bakery_blog_posts_meta
 		 *
 		 * @Hooked bakery_blog_posts_meta_cb
-		 *
-		 *
 		 */
 		do_action( 'bakery_blog_posts_meta' );
-
-		/**
-		 * Blog Excerpt With read more button
-		 * @Hook  bakery_blog_posts_bottom_meta
-		 *
-		 * @Hooked bakery_blog_posts_bottom_meta_cb
-		 *
-		 *
-		 */
-		do_action( 'bakery_blog_posts_bottom_meta' );
 		?>
+
+			<div class="user-details row">
+					<?php
+					/**
+					 * Blog single post meta category, tag, next - previous link, comments form
+					 * and biography
+					 * @Hook  bakery_blog_single_meta
+					 *
+					 * @Hooked bakery_blog_single_meta_cb
+					 */
+					do_action( 'bakery_blog_single_meta' );
+					?>
+			</div>
     </div>
     <div class="col-lg-9 col-md-9 blog-content">
         <div class="feature-img">
@@ -50,8 +51,6 @@ if( ! defined( 'ABSPATH' ) ) {
 			 * @Hook  bakery_blog_posts_thumb
 			 *
 			 * @Hooked bakery_blog_posts_thumb_cb
-			 *
-			 *
 			 */
 			do_action( 'bakery_blog_posts_thumb' );
 			?>

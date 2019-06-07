@@ -240,7 +240,7 @@ class Bakery_Menu_Item extends Widget_Base {
 			'color_btnborder', [
 				'label'     => __( 'Button Border Color', 'bakery' ),
 				'type'      => Controls_Manager::COLOR,
-				'default'   => '',
+				'default'   => 'rgba(255,255,255,0)',
 				'selectors' => [
 					'{{WRAPPER}} .item-category-area .primary-btn' => 'border-color: {{VALUE}};',
 				],
@@ -260,7 +260,7 @@ class Bakery_Menu_Item extends Widget_Base {
 			'color_btnbg', [
 				'label'       => __( 'Button Background Color', 'bakery' ),
 				'type'        => Controls_Manager::COLOR,
-				'default'     => '#d1ab7f',
+				'default'     => '',
 				'selectors'   => [
 					'{{WRAPPER}} .item-category-area .primary-btn' => 'background-color: {{VALUE}};',
 				],
