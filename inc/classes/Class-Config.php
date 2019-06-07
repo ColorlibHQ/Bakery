@@ -84,8 +84,8 @@ final class Bakery {
         
         // support logo
         add_theme_support( 'custom-logo', array(
-            'height'      => 30,
-            'width'       => 140,
+            'height'      => 60,
+            'width'       => 130,
             'flex-height' => true,
             'flex-width'  => true,
             'header-text' => array( 'site-title', 'site-description' ),
