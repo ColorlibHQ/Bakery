@@ -72,6 +72,15 @@ if( ! defined( 'BAKERY_DIR_PATH_WIDGET' ) ) {
 
 
 
+// Admin Enqueue script
+function bakery_admin_script(){
+    wp_enqueue_style( 'bakery-admin', get_template_directory_uri().'/assets/css/bakery_admin.css', false, '1.0.0' );
+    wp_enqueue_script( 'bakery_admin', get_template_directory_uri().'/assets/js/bakery_admin.js', false, '1.0.0' );
+}
+add_action( 'admin_enqueue_scripts', 'bakery_admin_script' );
+
+
+
 /**
  * Include File
  *
